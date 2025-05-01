@@ -1,13 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import { LanguageProvider } from '@/contexts/LanguageContext';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import SpecialtiesOverview from '@/components/SpecialtiesOverview';
+import AboutLawyer from '@/components/AboutLawyer';
+import AreasOfExpertise from '@/components/AreasOfExpertise';
+import Statistics from '@/components/Statistics';
+import ServicesOverview from '@/components/ServicesOverview';
+import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <LanguageProvider>
+      <div className="min-h-screen bg-dark">
+        <Header />
+        <Hero />
+        <SpecialtiesOverview />
+        <AboutLawyer />
+        <AreasOfExpertise />
+        <Statistics />
+        <ServicesOverview />
+        <ContactForm />
+        <Footer />
       </div>
-    </div>
+    </LanguageProvider>
   );
 };
 
