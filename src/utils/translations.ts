@@ -165,7 +165,7 @@ export const translations: Record<string, Translation> = {
       values: {
         humanity: "Humanité et écoute dans notre approche",
         independence: "Indépendance dans nos conseils et actions",
-        confidentialité: "Confidentialité absolue des dossiers",
+        confidentiality: "Confidentialité absolue des dossiers",
       },
       videoTitle: "Découvrez notre vision du métier d'avocat",
     },
